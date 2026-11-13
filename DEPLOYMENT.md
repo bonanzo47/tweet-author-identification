@@ -2,17 +2,22 @@
 
 ## Prepare the GitHub repository
 
-Create a GitHub repository and upload the app files. Include `app.py`,
-`requirements.txt`, and these model artifacts:
+Create a GitHub repository and upload the app, training files, dataset, and
+model artifacts. Include:
 
+- `app.py`
+- `train_model.py`
+- `tweet_with_authors.csv`
+- `requirements.txt`
 - `vectorizer.pkl`
 - `model_svm.pkl`
 - `model_nb.pkl`
 - `model_rf.pkl`
 - `clean_df.pkl`
 
-The training CSV and `train_model.py` are only needed if you want to retrain
-the models. Do not upload `.venv`; it is excluded by `.gitignore`.
+The app itself uses the saved model artifacts; the CSV and `train_model.py`
+are included so the dataset and retraining workflow are available in GitHub.
+Do not upload `.venv`; it is excluded by `.gitignore`.
 
 Before pushing, make sure the dataset and model artifacts are okay to share
 with the repository's viewers. A private repository can be used if the data
